@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DeveloperController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,7 @@ Route::get('/', function () {
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Auth::routes();
+
+Route::get('/developer',[DeveloperController::class,'index'])->name('Developer');
+Route::get('/developer/create',[DeveloperController::class,'create']);
+Route::post('/developer/store',[DeveloperController::class,'store']);
