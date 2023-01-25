@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DeveloperController;
-
+use App\Http\Controllers\employeescontroller;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,3 +25,4 @@ Auth::routes();
 Route::get('/developer',[DeveloperController::class,'index'])->name('Developer');
 Route::get('/developer/create',[DeveloperController::class,'create']);
 Route::post('/developer/store',[DeveloperController::class,'store']);
+Route::get('/employees',[employeescontroller::class,'index'])->name('employees');
