@@ -13,4 +13,9 @@ class employeescontroller extends Controller
         $roles = Role::all();
         return view ('employee.index',compact('roles'));
     }
+
+    public function document_()
+    {
+        return view ('employee.documentview');
+    }
 }

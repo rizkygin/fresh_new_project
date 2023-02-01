@@ -26,3 +26,4 @@ Route::get('/developer',[DeveloperController::class,'index'])->name('Developer')
 Route::get('/developer/create',[DeveloperController::class,'create']);
 Route::post('/developer/store',[DeveloperController::class,'store']);
 Route::get('/employees',[employeescontroller::class,'index'])->name('employees');
+Route::get('/document',[employeescontroller::class,'document_'])->name('document');
