@@ -32,10 +32,11 @@
                     <div class="description-block">
                         <h5 class="description-header">bekerja</h5>
                         <span class="description-text">status</span>
-                        <div class="btn btn-app bg-warning">
+                        <div>
+                        <a href={{route("document")}} class="btn btn-app bg-warning">
                             <span class="badge bg-info "></span>
-                                <i class="fas fa-file"></i>
-                                 <a href={{route("document")}}>document</a>
+                                <i class="fas fa-file"></i>Document
+                        </a>
                         </div>
                     </div>
                 </div>
