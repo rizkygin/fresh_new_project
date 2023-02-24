@@ -16,10 +16,22 @@ class FeatureSeeder extends Seeder
     public function run()
     {
         Feature::truncate();
-        return Feature::create([
+        return $this->seed();
+    }
+    public function seed(){
+        Feature::create([
             'id'=> 1,
             'link' => '/developer',
             'name' => 'Developer'
-        ]);
+        ]
+       
+    );
+    Feature::create([
+        'id'=>2,
+        'link' => '/employees',
+        'name' => 'Employees'
+    ]
+   
+);
     }
 }

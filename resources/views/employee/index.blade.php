@@ -1,17 +1,27 @@
 @extends('layouts.app') @section('header')
-
-<div class="col-md-4" stayle="width=50%">
+<style>
+    img {
+        width: 250px;
+        height: 150px;
+    }
+    .pr{
+        width: 100px;
+        height: 300px;
+        border-radius: 100%;
+    }
+    .col-md-4{
+        width: 100px;
+    }
+   
+</style>
+<div class="col-md-4" >
     <div class="card card-widget widget-user" >
         <div class="widget-user-header bg-info" >
-            <h3 class="widget-user-username">Alexander Pierce</h3>
-            <h5 class="widget-user-desc">Founder &amp; CEO</h5>
+            <h3 class="widget-user-username">Alexander Pierce.Sos.</h3>
+            <h5 class="widget-user-desc">Direktur</h5>
         </div>
         <div class="widget-user-image">
-            <img
-                class="img-circle elevation-2"
-                src="../dist/img/user1-128x128.jpg"
-                alt="User Avatar"
-            />
+        <img class="pr" src="{{asset('profile/pexels-ian-turnell-709552.jpg')}}">
         </div>
         <div class="card-footer" >
             <div class="row">
@@ -43,7 +53,7 @@
 
                 <div class="col-sm-4">
                     <div class="description-block">
-                        <h5 class="description-header">0857535443533</h5>
+                        <h5 class="description-header">085753078681</h5>
                         <span class="description-text">Number</span>
                         <div>
                             <a class="btn btn-app bg-success">
@@ -56,5 +66,5 @@
         </div>
     </div>
 
-    @endsection @section('content') @endsection
 </div>
+@endsection @section('content') @endsection
