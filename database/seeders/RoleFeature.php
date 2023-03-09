@@ -16,10 +16,18 @@ class RoleFeature extends Seeder
     public function run()
     {
         Role_feature::truncate();
-        return Role_feature::create([
+        return $this->seed();
+    }
+    public function seed(){
+        Role_feature::create([
             'id' => 1,
             'role_id' => 1,
             'feature_id' => 1,
+        ]);
+        Role_feature::create([
+            'id' => 2,
+            'role_id' => 1,
+            'feature_id' => 2,
         ]);
     }
 }

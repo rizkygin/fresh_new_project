@@ -9,7 +9,7 @@
             $menus = Auth::user()->role->role_feature;
         @endphp
         @foreach ($menus as $menu)
-            <a href="{{route($menu->feature->name)}}" class="nav-link {{ Request::is('home') ? 'active' : '' }}">
+            <a href="{{route($menu->feature->name)}}" class="nav-link {{ Request::is('home') ? 'active' : 'name' }}">
                 <i class="nav-icon fas fa-home"></i>
                 <p>{{$menu->feature->name}}</p>
             </a>
